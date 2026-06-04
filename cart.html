@@ -22,6 +22,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
+    <a href="checkout.html">Checkout</a>
     <a href="deals.html">Delivery</a>
     <a href="contact.html">Contact</a>
   </nav>
@@ -32,9 +33,15 @@
 </header>
 
 <!-- PAGE HEADER -->
-<section class="cart-header">
-  <h1>Your Shopping Cart</h1>
-  <p>Review your items before checkout.</p>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Your Shopping Cart</h1>
+    <p>Review your items before checkout.</p>
+<div class="hero-buttons">
+<button class="btn">Start Shopping</button>
+</div> 
+
 </section>
 
 <!-- CART -->
@@ -62,7 +69,9 @@
 
     <div class="summary-row total-row">
       <span>Total</span>
-      <span id="total">$0.00</span>
+<a href="checkout.html" class="checkout-btn">
+  Proceed to Checkout
+</a>
     </div>
 
     <button class="checkout-btn">
