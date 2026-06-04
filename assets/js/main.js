@@ -190,3 +190,23 @@ document.addEventListener(
     }
   }
 );
+
+function showToast(msg) {
+  const div = document.createElement("div");
+  div.innerText = msg;
+  div.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+  `;
+
+  document.body.appendChild(div);
+
+  setTimeout(() => div.remove(), 2000);
+};
+showToast("Added to cart");
