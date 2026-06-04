@@ -142,14 +142,19 @@ function decreaseQty(index) {
 
   renderCart();
 }
-
 function removeItem(index) {
+
+  const productName =
+    cart[index]?.name;
 
   cart.splice(index, 1);
 
   saveCart();
-
   renderCart();
-}
 
-renderCart();
+  if (productName) {
+    showToast(
+      `${productName} removed`
+    );
+  }
+}
