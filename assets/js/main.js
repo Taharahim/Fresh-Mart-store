@@ -68,8 +68,7 @@ function renderProducts(list = PRODUCTS) {
   }
 
   grid.innerHTML = list.map(product => `
-    <div class="card">
-
+<div class="product-card">
       <div class="badge">⭐ ${product.rating}</div>
 
       <img src="${product.image}" alt="${product.name}" loading="lazy">
